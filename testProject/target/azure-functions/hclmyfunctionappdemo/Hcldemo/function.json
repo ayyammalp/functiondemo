@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../demo_tool-0.0.1-SNAPSHOT.jar",
+  "entryPoint" : "com.demo.Hcldemo.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
